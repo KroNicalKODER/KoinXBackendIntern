@@ -24,7 +24,7 @@ app.get('/', (req, res) => {
 app.use('/coins',router)
 
 cron.schedule('0 */2 * * *', () => {
-    axios.get('http://localhost:3000/coins/save_coin_data')
+    axios.get('https://koinxbackendintern.onrender.com/coins/save_coin_data')
     console.log('saved to database after 2 hours');
 });
 
