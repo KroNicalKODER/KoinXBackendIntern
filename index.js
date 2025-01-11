@@ -18,7 +18,7 @@ const connect = ()=>{
 }
 
 app.get('/', (req, res) => {
-    res.send('Hello World!');
+    res.send('Hello this is the koinx backed assignment developed by Mradul Varshney (Kronikal Kodar)');
 });
 
 app.use('/coins',router)
